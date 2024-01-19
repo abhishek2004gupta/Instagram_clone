@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- sidebar -->
+    <div class="sidebar">
+      <a href="#" class="logo">
+        <img
+          src="https://cdn.telanganatoday.com/wp-content/uploads/2021/10/Tips-to-keep-your-Instagram-account-safe.jpg"
+          alt="logo"
+        />
+      </a>
+      <!-- profile image -->
+      <div class="profile">
+        <div class="profile-img">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRqWBN13MbhJTPCSB_ZgrU6eQfynP4St2V8Q&usqp=CAU"
+            alt="profile"
+          />
+        </div>
+        <div class="name">
+          <h1>Abhishek Gupta</h1>
+          <img
+            src="data:image/jpeg;base64,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"
+            alt="verify"
+          />
+        </div>
+        <span>@abhishek</span>
+      </div>
+      <!-- about -->
+      <div class="about">
+        <!-- Box 1 -->
+        <div class="box">
+          <h3>108</h3>
+          <span>Posts</span>
+        </div>
+        <!-- box 2 -->
+        <div class="box">
+          <h3>18k</h3>
+          <span>Followers</span>
+        </div>
+        <!-- box 3 -->
+        <div class="box">
+          <h3>183</h3>
+          <span>Following</span>
+        </div>
+      </div>
+      <!--menu-->
+      <div class="menu">
+        <a href="#">
+          <span class="icon">
+            <i class="ri-function-line"></i>
+          </span>
+          <a href="file:///E:/instagam%20clone%20vs%20code/code.html">Feed</a>
+        </a>
+
+        <a href="#">
+          <span class="icon">
+            <i class="ri-notification-4-line"></i>
+          </span>
+          <a href="file:///E:/instagam%20clone%20vs%20code/code2.html"
+            >Notification</a
+          >
+        </a>
+        <a href="#">
+          <span class="icon">
+            <i class="ri-search-line"></i>
+          </span>
+          <a href="file:///E:/instagam%20clone%20vs%20code/code2.html"
+            >Explore</a
+          >
+        </a>
+        <a href="#">
+          <span class="icon">
+            <i class="ri-mail-unread-fill"></i>
+          </span>
+          <a href="file:///E:/instagam%20clone%20vs%20code/code2.html"
+            >Message</a
+          >
+        </a>
+        <a href="#">
+          <span class="icon">
+            <i class="ri-send-plane-fill"></i>
+          </span>
+          <a href="file:///E:/instagam%20clone%20vs%20code/code2.html"
+            >Direct</a
+          >
+        </a>
+        <a href="#">
+          <span class="icon">
+            <i class="ri-bar-chart-2-fill"></i>
+          </span>
+          <a href="file:///E:/instagam%20clone%20vs%20code/code2.html">Stats</a>
+        </a>
+
+        <a href="#">
+          <span class="icon">
+            <i class="ri-settings-4-line"></i>
+          </span>
+          <a href="file:///E:/instagam%20clone%20vs%20code/code2.html"
+            >Settings</a
+          >
+        </a>
+
+        <a href="#">
+          <span class="icon">
+            <i class="ri-logout-box-r-line"></i>
+          </span>
+          <a href="file:///E:/instagam%20clone%20vs%20code/codelog.html"
+            >Logout</a
+          >
+        </a>
+      </div>
+    </div>
+    <!--main home-->
+    <div class="main-home">
+      <div class="header">
+        <!--search-->
+        <div class="search">
+          <i class="ri-search-line"></i>
+          <input type="text" name="" id="" placeholder="search" />
+        </div>
+        <div class="header-content">
+          <i class="ri-notification-4-line"></i>
+          <i class="ri-mail-unread-fill"></i>
+          <!--button-->
+          <a href="#" class="btn">
+            <i class="ri-add-circle-fill"></i>
+            <div class="btn-text">
+              add photos
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="stories-title">
+        <h1>storie</h1>
+        <a href="#" class="btn">
+          <i class="ri-play-circle-line"></i>
+          <div class="text">
+            watch all
+          </div>
+        </a>
+      </div>
+      <div class="stories">
+        <!--stories 1-->
+        <div class="stories-img color">
+          <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRqWBN13MbhJTPCSB_ZgrU6eQfynP4St2V8Q&usqp=CAU"
+          alt="profile" /" alt="profile" />
+          <div class="add">+</div>
+        </div>
+
+        <!--stories 2-->
+        <div class="stories-img">
+          <a
+            href="https://www.instagram.com/reel/CoMA4u4gfyI/?utm_source=ig_web_copy_link"
+          >
+            <img
+              src="https://pbs.twimg.com/profile_images/1562753500726976514/EPSUNyR3_400x400.jpg"
+              alt="profile"
+            />
+          </a>
+        </div>
+
+        <!--stories 3-->
+        <div class="stories-img">
+          <a
+            href="https://www.instagram.com/p/CD6ZQn1lGBi/?utm_source=ig_web_copy_link"
+          >
+            <img
+              src="https://kalingatv.com/wp-content/uploads/2022/08/Dhoni-Instagram-DP.jpg"
+              alt="profile"
+          /></a>
+        </div>
+
+        <!--stories 4-->
+        <div class="stories-img">
+          <a
+            href="https://www.instagram.com/stories/highlights/17936267230112454/?hl=en"
+          >
+            <img
+              src="https://www.insidesport.in/wp-content/uploads/2020/06/1-2-3.jpg"
+              alt="profile"
+          /></a>
+        </div>
+
+        <!--stories 5-->
+        <div class="stories-img">
+          <a
+            href="https://www.instagram.com/p/CmcL80qvaZU/?utm_source=ig_web_copy_link"
+            ><img
+              src="https://pbs.twimg.com/profile_images/864282616597405701/M-FEJMZ0_400x400.jpg"
+              alt="profile"
+            />
+          </a>
+        </div>
+
+        <!--stories 6-->
+        <div class="stories-img">
+          <a
+            href="https://www.instagram.com/reel/Cmi93Z7IVdl/?utm_source=ig_web_copy_link"
+            ><img
+              src="https://hindi.viestories.com/wp-content/uploads/2022/12/308318877_195761909554542_2194525560048302767_n.jpg"
+              alt="profile"
+          /></a>
+        </div>
+
+        <!--stories 7-->
+        <div class="stories-img">
+          <a
+            href="https://www.instagram.com/stories/highlights/17941222630308351/?hl=en"
+          >
+            <img
+              src="https://img.analisa.io/instagram/profpic/165684072_2798484713795010_4796143747709337324_n.jpg"
+              alt="profile"
+          /></a>
+        </div>
+
+        <!--stories 8-->
+        <div class="stories-img">
+          <a
+            href="https://www.instagram.com/stories/highlights/17926939064646360/?hl=en"
+          >
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGjxV-LL3QRMBnj7dRw4TX3gL5lT58M1nUKxXZsIaxIe7i8gsN2VZPyNwfwPJGhVHcazc&usqp=CAU"
+              alt="profile"
+            />
+          </a>
+        </div>
+
+        <!--stories 9-->
+        <div class="stories-img">
+          <a
+            href="https://www.instagram.com/stories/highlights/18190380058178997/?hl=en"
+          >
+            <img
+              src="https://yt3.googleusercontent.com/ytc/AL5GRJXByrytc3riCOKpX_LT0q3AC8JZoHXuohN8fciYrg=s176-c-k-c0x00ffffff-no-rj-mo"
+              alt="profile"
+          /></a>
+        </div>
+
+        <!--stories 10-->
+        <div class="stories-img">
+          <a
+            href="https://www.instagram.com/stories/highlights/17945963315177702/?hl=en"
+          >
+            <img
+              src="https://im.indiatimes.in/content/2020/Jun/gaurav-taneja-1_5efaffe876a72.jpg?w=725&h=543"
+              alt="profile"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="feed">
+        <h1>Feed</h1>
+        <div class="feed-text">
+          <h2>Latest</h2>
+          <span>Popular</span>
+        </div>
+      </div>
+      <div class="main-post">
+        <!--box1-->
+        <div class="post-box">
+          <img
+            src="https://resources.pulse.icc-cricket.com/ICC/photo/2022/10/23/674b11b7-ee28-428c-8e28-03c75c5d06c4/Virat-Kohli-of-India-bats-during-the-ICC-Men-s-T20-World-Cup-match-between-India-and-Pakistan-5-.jpg"
+            alt="post"
+          />
+          <div class="post-info">
+            <div class="post-profile">
+              <div class="post-img">
+                <img
+                  src="https://pbs.twimg.com/profile_images/1562753500726976514/EPSUNyR3_400x400.jpg"
+                  alt="profile"
+                />
+              </div>
+              <h3>
+                <a href="https://www.instagram.com/virat.kohli/?hl=en">
+                  Virat kohli
+                </a>
+              </h3>
+            </div>
+            <div class="likes">
+              <i class="ri-heart-line"></i>
+              <span>84.4k</span>
+              <i class="ri-chat-3-line"></i>
+              <span>2.4k</span>
+            </div>
+          </div>
+        </div>
+        <!--box1-->
+        <div class="post-box">
+          <img
+            src="https://res.cloudinary.com/jerrick/image/upload/f_jpg,fl_progressive,q_auto,w_1024/610927ca3e91da001d65e39a.jpg"
+            alt="post"
+          />
+          <div class="post-info">
+            <div class="post-profile">
+              <div class="post-img">
+                <img
+                  src="https://kalingatv.com/wp-content/uploads/2022/08/Dhoni-Instagram-DP.jpg"
+                  alt="profile"
+                />
+              </div>
+              <h3>
+                <a href="https://www.instagram.com/mahi7781/?hl=en">
+                  mahi7781
+                </a>
+              </h3>
+            </div>
+            <div class="likes">
+              <i class="ri-heart-line"></i>
+              <span>84.4k</span>
+              <i class="ri-chat-3-line"></i>
+              <span>2.4k</span>
+            </div>
+          </div>
+        </div>
+        <!--box1-->
+        <div class="post-box">
+          <img
+            src="https://img.republicworld.com/republic-prod/stories/images/xxhdpi/qlndypzvemfrx8ss_1664969179.jpeg"
+            alt="post"
+          />
+          <div class="post-info">
+            <div class="post-profile">
+              <div class="post-img">
+                <img
+                  src="https://www.insidesport.in/wp-content/uploads/2020/06/1-2-3.jpg"
+                  alt="profile"
+                />
+              </div>
+              <h3>
+                <a href="https://www.instagram.com/rohitsharma45/?hl=en">
+                  Rohit Sharma
+                </a>
+              </h3>
+            </div>
+            <div class="likes">
+              <i class="ri-heart-line"></i>
+              <span>84.4k</span>
+              <i class="ri-chat-3-line"></i>
+              <span>2.4k</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
